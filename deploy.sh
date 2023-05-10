@@ -7,10 +7,10 @@ set -e
 IMAGE_NAME=my-react-app
 
 # Docker hub username
-DOCKER_USERNAME=raghavanp08
+DOCKER_USERNAME=
 
 # Docker hub password
-DOCKER_PASSWORD=909262Ra@
+DOCKER_PASSWORD=
 
 # Docker hub repository
 DOCKER_REPOSITORY=raghavanp08/capstone_project
