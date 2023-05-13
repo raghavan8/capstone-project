@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # Add the index.html file to the working directory
-"COPY index.html ."
+COPY index.html .
 
 # Build the application
 RUN npm run build
