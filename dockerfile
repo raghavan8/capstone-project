@@ -1,4 +1,3 @@
-
 # Use an official Node.js runtime as a parent image
 FROM node:14-alpine
 
@@ -14,6 +13,9 @@ RUN npm install
 # Copy the rest of the application files to the working directory
 COPY . .
 
+# Add the index.html file to the working directory
+COPY index.html .
+
 # Build the application
 RUN npm run build
 
@@ -22,4 +24,5 @@ EXPOSE 80
 
 # Start the application using the production server
 CMD [ "npm", "start" ]
+
 
